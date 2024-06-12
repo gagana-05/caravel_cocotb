@@ -16,5 +16,8 @@
 # Caravel user project includes
 -v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
 -v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
+-v $(USER_PROJECT_VERILOG)/rtl/i2c_master_byte_ctrl.v
+-v $(USER_PROJECT_VERILOG)/rtl/i2c_master_bit_ctrl.v
+
 
  
