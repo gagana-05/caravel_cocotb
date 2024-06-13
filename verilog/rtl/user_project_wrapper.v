@@ -104,18 +104,14 @@ user_proj_example mprj (
 
     // Logic Analyzer
 
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
+    .la_data_in(la_data_in[66:64]),
+    .la_oenb (la_oenb[66:64]),
 
     // IO Pads
 
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-    // IRQ
-    .irq(user_irq)
+    .io_in ({io_in[8:7]}),
+    .io_out({io_out[10:9]}),
+    .io_oeb({io_oeb[10:9]}),
 );
 
 endmodule	// user_project_wrapper
